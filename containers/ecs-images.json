@@ -1,0 +1,13 @@
+[
+  {
+    "name": "ecs-busybee-home",
+    "image": "764364320071.dkr.ecr.us-east-1.amazonaws.com/ecs-busybee-home",
+    "essential": true,
+    "portMappings": [
+      {
+        "containerPort": 80,
+        "hostPort": 80
+      }
+    ]
+  }
+]

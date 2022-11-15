@@ -1,0 +1,52 @@
+Category,Beverage,Size,Price
+Traditional,Brewed Coffee,Small,2
+Traditional,Brewed Coffee,Regular,2.75
+Traditional,Brewed Coffee,Large,3.5
+Traditional,Machiatto,Small,3.5
+Traditional,Machiatto,Regular,4.5
+Traditional,Machiatto,Large,5.5
+Traditional,Latte,Small,2.7
+Traditional,Latte,Regular,3.5
+Traditional,Latte,Large,4.5
+Traditional,Americano,Small,2
+Traditional,Americano,Regular,2.75
+Traditional,Americano,Large,3.5
+Traditional,Cappuccino,Small,2.7
+Traditional,Cappuccino,Regular,3.5
+Traditional,Cappuccino,Large,4.5
+Cold Brew,Iced Tea,Small,3
+Cold Brew,Iced Tea,Regular,3.5
+Cold Brew,Iced Tea,Large,4
+Cold Brew,Nitro,Small,3
+Cold Brew,Nitro,Regular,3.5
+Cold Brew,Nitro,Large,4
+Lattes,Mocha,Small,3.2
+Lattes,Mocha,Regular,3.85
+Lattes,Mocha,Large,4.5
+Lattes,Hazelnut,Small,3.2
+Lattes,Hazelnut,Regular,3.85
+Lattes,Hazelnut,Large,4.5
+Lattes,Salted Caramel,Small,3.2
+Lattes,Salted Caramel,Regular,3.85
+Lattes,Salted Caramel,Large,4.5
+Lattes,Vanilla,Small,3.2
+Lattes,Vanilla,Regular,3.85
+Lattes,Vanilla,Large,4.5
+Hot Tea,Jasmine,Small,2
+Hot Tea,Jasmine,Regular,2.5
+Hot Tea,Jasmine,Large,3
+Hot Tea,Earl Grey,Small,2
+Hot Tea,Earl Grey,Regular,2.5
+Hot Tea,Earl Grey,Large,3
+Smoothies,Banana,Regular,5
+Smoothies,Banana,Large,7
+Smoothies,Strawberry,Regular,5
+Smoothies,Strawberry,Large,7
+Smoothies,Peach,Regular,5
+Smoothies,Peach,Large,7
+Smoothies,Passion Fruit,Regular,5
+Smoothies,Passion Fruit,Large,7
+Smoothies,Mango,Regular,5
+Smoothies,Mango,Large,7
+Smoothies,Wild Berry,Regular,5
+Smoothies,Wild Berry,Large,7

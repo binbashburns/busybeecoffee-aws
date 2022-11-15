@@ -1,0 +1,529 @@
+{
+    "busybee-menu-database": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "1"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Brewed Coffee"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "2"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "2"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Brewed Coffee"
+                    },
+                    "Size": {
+                        "S": "Regular"
+                    },
+                    "Price": {
+                        "S": "2.75"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "3"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Brewed Coffee"
+                    },
+                    "Size": {
+                        "S": "Large"
+                    },
+                    "Price": {
+                        "S": "3.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "4"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Machiatto"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "3.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "5"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Machiatto"
+                    },
+                    "Size": {
+                        "S": "Regular"
+                    },
+                    "Price": {
+                        "S": "4.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "6"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Machiatto"
+                    },
+                    "Size": {
+                        "S": "Large"
+                    },
+                    "Price": {
+                        "S": "5.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "7"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Latte"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "2.7"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "8"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Latte"
+                    },
+                    "Size": {
+                        "S": "Regular"
+                    },
+                    "Price": {
+                        "S": "3.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "9"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Latte"
+                    },
+                    "Size": {
+                        "S": "Large"
+                    },
+                    "Price": {
+                        "S": "4.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "10"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Americano"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "2"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "11"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Americano"
+                    },
+                    "Size": {
+                        "S": "Regular"
+                    },
+                    "Price": {
+                        "S": "2.75"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "12"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Americano"
+                    },
+                    "Size": {
+                        "S": "Large"
+                    },
+                    "Price": {
+                        "S": "3.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "13"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Cappuccino"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "2.7"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "14"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Cappuccino"
+                    },
+                    "Size": {
+                        "S": "Regular"
+                    },
+                    "Price": {
+                        "S": "3.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "15"
+                    },
+                    "Category": {
+                        "S": "Traditional"
+                    },
+                    "Beverage": {
+                        "S": "Cappuccino"
+                    },
+                    "Size": {
+                        "S": "Large"
+                    },
+                    "Price": {
+                        "S": "4.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "16"
+                    },
+                    "Category": {
+                        "S": "Cold Brew"
+                    },
+                    "Beverage": {
+                        "S": "Iced Tea"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "3"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "17"
+                    },
+                    "Category": {
+                        "S": "Cold Brew"
+                    },
+                    "Beverage": {
+                        "S": "Iced Tea"
+                    },
+                    "Size": {
+                        "S": "Regular"
+                    },
+                    "Price": {
+                        "S": "3.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "18"
+                    },
+                    "Category": {
+                        "S": "Cold Brew"
+                    },
+                    "Beverage": {
+                        "S": "Iced Tea"
+                    },
+                    "Size": {
+                        "S": "Large"
+                    },
+                    "Price": {
+                        "S": "4"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "19"
+                    },
+                    "Category": {
+                        "S": "Cold Brew"
+                    },
+                    "Beverage": {
+                        "S": "Nitro"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "3"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "20"
+                    },
+                    "Category": {
+                        "S": "Cold Brew"
+                    },
+                    "Beverage": {
+                        "S": "Nitro"
+                    },
+                    "Size": {
+                        "S": "Regular"
+                    },
+                    "Price": {
+                        "S": "3.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "21"
+                    },
+                    "Category": {
+                        "S": "Cold Brew"
+                    },
+                    "Beverage": {
+                        "S": "Nitro"
+                    },
+                    "Size": {
+                        "S": "Large"
+                    },
+                    "Price": {
+                        "S": "4"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "22"
+                    },
+                    "Category": {
+                        "S": "Lattes"
+                    },
+                    "Beverage": {
+                        "S": "Mocha"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "3.2"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "23"
+                    },
+                    "Category": {
+                        "S": "Lattes"
+                    },
+                    "Beverage": {
+                        "S": "Mocha"
+                    },
+                    "Size": {
+                        "S": "Regular"
+                    },
+                    "Price": {
+                        "S": "3.85"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "24"
+                    },
+                    "Category": {
+                        "S": "Lattes"
+                    },
+                    "Beverage": {
+                        "S": "Mocha"
+                    },
+                    "Size": {
+                        "S": "Large"
+                    },
+                    "Price": {
+                        "S": "4.5"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "ID": {
+                        "S": "25"
+                    },
+                    "Category": {
+                        "S": "Lattes"
+                    },
+                    "Beverage": {
+                        "S": "Hazelnut"
+                    },
+                    "Size": {
+                        "S": "Small"
+                    },
+                    "Price": {
+                        "S": "3.2"
+                    }
+                }
+            }
+        }
+    ]
+}

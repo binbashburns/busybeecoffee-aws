@@ -1,0 +1,54 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo install step...
+      - apt-get update
+      - apt install jq
+  pre_build:
+    commands:
+      - echo logging in to AWS ECR...
+      - REPO_NAME=ecs-busybee-home 
+      - echo $AWS_ACCOUNT_ID
+      - echo $DEPLOY_EXECUTION_ROLE
+      - REPO_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$REPO_NAME 
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $REPO_URI
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7) 
+      - IMAGE_TAG=${COMMIT_HASH:=latest}
+      - printf '{"ImageURI":' > imageDetail.json
+      - echo \"$REPO_URI\"} >> imageDetail.json
+      - printf '{"containerDefinitions":[{"name":"ecs-busybee-home",' > taskdef.json
+      - echo '"image":' >>  taskdef.json
+      - echo \"$REPO_URI\", >>  taskdef.json
+      - printf '"memory":512,"cpu":128,"essential":true,"portMappings":[{"containerPort":80,"protocol":"tcp" } ], ' >>  taskdef.json
+      - printf '"logConfiguration":{"logDriver":"awslogs","options":{"awslogs-group":"busybeeProject","awslogs-region":"us-east-1","awslogs-stream-prefix":"prod/build" } } }],' >>  taskdef.json
+      - printf '"networkMode":"bridge",' >>  taskdef.json
+      - echo '"family":' >>  taskdef.json
+      - echo \"$FAMILY\", >>  taskdef.json
+      - echo '"taskRoleArn":' >>  taskdef.json
+      - echo \"$DEPLOY_EXECUTION_ROLE\" } >>  taskdef.json
+      - echo "Generated taskdef.json:"
+      - cat taskdef.json
+      - envsubst < appspec_template.yaml > appspec.yaml
+      - echo "Generated appspec.yaml:"
+      - cat appspec.yaml
+  build:
+    commands:
+      - echo build Docker image on `date`
+      - cd src
+      - echo $REPO_URI
+      - echo $IMAGE_TAG
+      - docker build -t $REPO_URI .
+      - echo tagging docker image 
+      - docker tag $REPO_URI:latest $REPO_URI:$IMAGE_TAG
+  post_build:
+    commands:
+      - echo build Docker image complete `date`
+      - echo push latest Docker images to ECR...
+      - echo Pushing $IMAGE_REPO_NAME to $REPO_URI with the tag $IMAGE_TAG
+      - docker push $REPO_URI:latest
+      - docker push $REPO_URI:$IMAGE_TAG
+      - echo "Image is now in ECR - Job Complete!"
+artifacts:
+  files:
+    - '**/*'
